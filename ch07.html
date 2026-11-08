@@ -405,6 +405,15 @@ footer.chfoot { margin-top: 2.5rem; }
 #mcl svg.mc-plot text{ font-family:"IBM Plex Sans Hebrew","Segoe UI",Arial,sans-serif; }
 #mcl .mc-steps button{ font-family:"IBM Plex Sans Hebrew","Segoe UI",Arial,sans-serif; }
 
+/* frame around the whole lab */
+#mcl{ background:var(--accent-soft); border:1px solid color-mix(in srgb, var(--accent) 35%, var(--rule)); border-radius:14px; padding:1rem 1.25rem 1.25rem; box-shadow:0 1px 0 rgba(0,0,0,.03); }
+@media (max-width:560px){ #mcl{ padding:.8rem .7rem 1rem; margin-inline:-.5rem; } }
+#mcl .mc-badge{ display:inline-flex; align-items:center; gap:.45rem; font-family:"IBM Plex Sans Hebrew","Segoe UI",Arial,sans-serif; font-size:.8rem; font-weight:600; color:var(--accent); background:var(--panel); border:1px solid color-mix(in srgb, var(--accent) 35%, var(--rule)); border-radius:999px; padding:.2rem .75rem; margin-bottom:.7rem; }
+#mcl .mc-badge::before{ content:""; width:.5rem; height:.5rem; border-radius:50%; background:var(--accent); }
+#mcl .mc-steps{ border-bottom-color:color-mix(in srgb, var(--accent) 25%, var(--rule)); }
+#mcl .mc-steps button{ background:var(--panel); }
+#mcl details.mc-calc{ background:var(--panel); }
+
 </style>
 </head>
 <body>
@@ -687,6 +696,7 @@ footer.chfoot { margin-top: 2.5rem; }
 <h3 id="s7-3-7"><span class="sn">7.3.7</span>סיכום: קיבול הדדי, מכדורים למסך מגע</h3>
 <p>הלומדה הבאה מסכמת את נושא הקיבול ההדדי. נתחיל בתזכורת קצרה של ההגדרות מסעיפים 7.3.1 עד 7.3.4. לאחר מכן נחשב את מטריצת הקיבול של שני כדורים, ונבדוק כיצד מוליך מוארק שלישי, מישור או כדור, משנה את הצימוד ביניהם. בסוף נבנה מודל פשוט של מסך מגע קיבולי. המעבר בין השלבים נעשה בכפתורים שבראש הלומדה ובתחתיתה.</p>
 <div id="mcl" class="mcl">
+<div class="mc-badge">לומדה אינטראקטיבית</div>
 <div class="mc-steps" id="mcl-steps" role="navigation" aria-label="שלבי הלומדה"></div>
 
 <div class="mc-step" id="mcl-s0" data-title="תזכורת">
