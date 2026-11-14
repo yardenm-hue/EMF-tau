@@ -956,14 +956,14 @@ footer.chfoot { margin-top: 2.5rem; }
 <footer class="chfoot"><p class="rights" lang="en" dir="ltr">All rights reserved. This material is publicly available for viewing. Please contact the repository owner for permission before copying, modifying, distributing, or otherwise reusing it.</p>
 <p class="views" id="gc-views" hidden>צפיות בעמוד: <bdi dir="ltr" id="gc-count"></bdi></p>
 <script>
-/* GoatCounter visit counter (emftau.goatcounter.com) */
+/* GoatCounter visit counter (emfields.goatcounter.com) */
 (function () {
   // One path per page: "/repo/" and "/repo/index.html" count as the same page.
   function gcPath() { return location.pathname.replace(/index\.html$/, ''); }
   window.goatcounter = { path: gcPath };
   var host = location.hostname;
   if (location.protocol === 'file:' || host === 'localhost' || host === '127.0.0.1') return;
-  fetch('https://emftau.goatcounter.com/counter/' + encodeURIComponent(gcPath()) + '.json')
+  fetch('https://emfields.goatcounter.com/counter/' + encodeURIComponent(gcPath()) + '.json')
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
       if (!d || d.count == null) return;
@@ -973,7 +973,7 @@ footer.chfoot { margin-top: 2.5rem; }
     .catch(function () {});
 })();
 </script>
-<script data-goatcounter="https://emftau.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://emfields.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </footer>
 <script>(function () {
   var links = document.querySelectorAll('.toc-desktop a');
